@@ -65,6 +65,7 @@ userSchema.methods.getJwtToken = function () {
     return jwtToken.sign({ _id: this._id }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIREIN
     })
+    
 };
 
 // Generating Reset Password
